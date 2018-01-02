@@ -20,5 +20,20 @@ import * as XECommand from 'xe-command'
 XECommand.copy('复制该内容到剪贴板')
 ```
 
+## API :
+#### copy (content) 复制文本到剪贴板
+```shell
+import { copy } as XECommand from 'xe-command'
+
+copy('复制该内容到剪贴板')
+```
+
+#### print () 打印页面
+```shell
+import { print } as XECommand from 'xe-command'
+
+print()
+```
+
 ## License
 Copyright (c) 2017-present, Xu Liangzhan
