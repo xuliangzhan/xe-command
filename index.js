@@ -31,3 +31,8 @@ export function print () {
     window.print()
   }
 }
+
+export default {
+  copy: copy,
+  print: print
+}
