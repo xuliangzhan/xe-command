@@ -7,6 +7,10 @@ XECommand 使用原生js实现复制文本到剪贴板的函数，部分版本�
 npm install xe-command --save
 ```
 
+### 直接下载并用 <script> 引用
+源码： dist/xe-command.js
+压缩版：dist/xe-command.min.js
+
 ### 按需引入
 ``` shell
 import { copy, print } from 'xe-command'
