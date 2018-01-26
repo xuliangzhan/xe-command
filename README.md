@@ -1,7 +1,8 @@
 # XECommand 支持复制文本到剪贴板、打印...
 
-## 通过NPM安装最新版本
+XEUtils 是一个原生js实现函数的支持复制文本到剪贴板，部分版本较低的浏览器的不支持，任何使用ES6模块编程的项目都能使用。
 
+### 通过NPM安装最新版本
 ``` shell
 npm install xe-command --save
 ```
