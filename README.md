@@ -31,7 +31,7 @@ import { copy } from 'xe-command'
 copy('复制该内容到剪贴板')
 ```
 
-#### print () 打印页面
+#### print () 调用打印
 ```shell
 import { print } from 'xe-command'
 
