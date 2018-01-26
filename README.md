@@ -2,7 +2,7 @@
 
 XECommand 使用原生js实现复制文本到剪贴板的函数，部分版本较低的浏览器的不支持，任何使用ES6模块编程的项目都能使用。
 
-### 直接下载并用 <script> 引用
+### 直接下载并用 script 引用
 ``` shell
 <script src="dist/xe-command.min.js" type="text/javascript"></script>
 ```

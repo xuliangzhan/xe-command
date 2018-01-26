@@ -1,6 +1,6 @@
 {
   "name": "xe-command",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "XECommand 支持复制文本到剪贴板、打印...",
   "main": "index.js",
   "scripts": {
