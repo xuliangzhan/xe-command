@@ -12,12 +12,16 @@ XECommand.copy('复制该内容到剪贴板')
 
 ### AMD 安装， 以 require.js 为例
 ``` shell
+// require 配置
 require.config({
   paths: {
+    // ...,
     'xe-command': './dist/xe-command.min'
   }
 })
-require(['xe-command'], function (XECommand) {
+
+// ./app.js 调用
+define(['xe-command'], function (XECommand) {
   XECommand.copy('复制该内容到剪贴板')
 })
 ```
