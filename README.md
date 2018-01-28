@@ -2,12 +2,27 @@
 
 XECommand 使用原生js实现复制文本到剪贴板的函数，部分版本较低的浏览器的不支持，任何使用ES6模块编程的项目都能使用。
 
-### 直接下载并用 script 引用
+### 直接引用 script 全局安装，XECommand 会定义为全局变量
 ``` shell
-<script src="dist/xe-command.min.js" type="text/javascript"></script>
+<script src="./dist/xe-command.min.js" type="text/javascript"></script>
+
+// 全局调用
+XECommand.copy('复制该内容到剪贴板')
 ```
 
-### 通过NPM安装最新版本
+### AMD 安装， 以 require.js 为例
+``` shell
+require.config({
+  paths: {
+    'XECommand': './dist/xe-command.min'
+  }
+})
+require(['XECommand'], function (XECommand) {
+  XECommand.copy('复制该内容到剪贴板')
+})
+```
+
+### ES6 Module 安装方式
 ``` shell
 npm install xe-command --save
 ```
