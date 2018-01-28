@@ -1,5 +1,5 @@
 /*!
- * xe-command.js v1.0.2
+ * xe-command.js v1.0.5
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  */
@@ -41,8 +41,21 @@
     }
   }
 
-  return {
-    copy: copy,
-    print: print
+  function XECommand () {}
+
+  /**
+   * 函数扩展
+   *
+   * @param {Object} methods 扩展函数对象
+   */
+  function mixin (methods) {
+    return Object.assign(XECommand, methods)
   }
+
+  mixin({
+    copy: copy, print: print
+  })
+  XECommand.mixin = mixin
+
+  return XECommand
 }))
