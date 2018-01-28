@@ -14,10 +14,10 @@ XECommand.copy('复制该内容到剪贴板')
 ``` shell
 require.config({
   paths: {
-    'XECommand': './dist/xe-command.min'
+    'xe-command': './dist/xe-command.min'
   }
 })
-require(['XECommand'], function (XECommand) {
+require(['xe-command'], function (XECommand) {
   XECommand.copy('复制该内容到剪贴板')
 })
 ```
