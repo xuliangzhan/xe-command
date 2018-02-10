@@ -10,11 +10,11 @@ XECommand 使用原生js实现复制文本到剪贴板的函数，部分版本�
 生产环境请使用 xe-command.min.js，更小的压缩版本，可以带来更快的速度体验。
 #### cdnjs 获取最新版本, [点击浏览](https://cdn.jsdelivr.net/npm/xe-command/)已发布的所有 npm 包的源代码。
 ``` shell
-<script src="https://cdn.jsdelivr.net/npm/xe-command@1.0.6/dist/xe-command.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/xe-command@1.0.6/dist/xe-command.js"></script>
 ```
 #### unpkg 获取最新版本, [点击浏览](https://unpkg.com/xe-command@1.0.6/)已发布的所有 npm 包的源代码
 ``` shell
-<script src="https://unpkg.com/xe-command@1.0.6/dist/xe-command.js" type="text/javascript"></script>
+<script src="https://unpkg.com/xe-command@1.0.6/dist/xe-command.js"></script>
 ```
 
 ### AMD 安装， 以 require.js 为例
