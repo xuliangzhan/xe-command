@@ -1,5 +1,8 @@
 # XECommand 支持复制文本到剪贴板、打印...
 
+[![npm version](https://img.shields.io/npm/v/xe-command.svg?style=flat-square)](https://www.npmjs.org/package/xe-command)
+[![npm downloads](https://img.shields.io/npm/dm/xe-command.svg?style=flat-square)](http://npm-stat.com/charts.html?package=xe-command)
+
 XECommand 使用原生js实现复制文本到剪贴板的函数，部分版本较低的浏览器的不支持，运行环境 ES5+。
 
 ### 直接引用 script 全局安装，XECommand 会定义为全局变量

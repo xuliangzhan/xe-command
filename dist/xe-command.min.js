@@ -1,5 +1,5 @@
 /*!
- * xe-command.js v1.0.5
+ * xe-command.js v1.0.6
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  */
