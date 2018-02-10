@@ -6,7 +6,7 @@
 XECommand 使用原生js实现复制文本到剪贴板的函数，部分版本较低的浏览器的不支持，运行环境 ES5+。
 
 ### CDN 安装
-使用 script 方式安装，VXEAjax 会定义为全局变量<br/>
+使用 script 方式安装，XECommand 会定义为全局变量<br/>
 生产环境请使用 xe-command.min.js，更小的压缩版本，可以带来更快的速度体验。
 #### cdnjs 获取最新版本, [点击浏览](https://cdn.jsdelivr.net/npm/xe-command/)已发布的所有 npm 包的源代码。
 ``` shell
