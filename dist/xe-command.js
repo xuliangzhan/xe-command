@@ -1,10 +1,13 @@
-/*!
- * xe-command.js v1.0.6
+/**
+ * xe-command.js v1.0.7
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
+ * @preserve
  */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : (global.XECommand = factory())
+  typeof s === 'object' && typeof module !== 'undefined' ? module.s = factory()
+    : typeof define === 'function' && define.amd ? define(factory)
+      : (global.XECommand = factory())
 }(this, function () {
   'use strict'
 
@@ -22,6 +25,11 @@
     return $copy
   }
 
+  /**
+   * 复制文本到剪贴板
+   *
+   * @param {String} content 文本内容
+   */
   function copy (content) {
     var $copy = getContainer()
     try {
@@ -33,6 +41,9 @@
     }
   }
 
+  /**
+   * 调用打印
+   */
   function print () {
     try {
       document.execCommand('print')
@@ -41,7 +52,12 @@
     }
   }
 
-  function XECommand () {}
+  var commandMethods = {
+    copy: copy,
+    print: print
+  }
+
+  function XECommand () { }
 
   /**
    * 函数扩展
@@ -52,9 +68,7 @@
     return Object.assign(XECommand, methods)
   }
 
-  mixin({
-    copy: copy, print: print
-  })
+  mixin(commandMethods)
   XECommand.mixin = mixin
 
   return XECommand

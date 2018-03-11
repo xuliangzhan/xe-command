@@ -1,4 +1,4 @@
-import * as command from './src/command'
+import { commandMethods } from './src/methods'
 
 function XECommand () {}
 
@@ -11,7 +11,7 @@ function mixin (methods) {
   return Object.assign(XECommand, methods)
 }
 
-mixin(command)
+mixin(commandMethods)
 XECommand.mixin = mixin
 
 export * from './src/command'
