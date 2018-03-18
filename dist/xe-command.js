@@ -1,5 +1,5 @@
 /**
- * xe-command.js v1.0.7
+ * xe-command.js v1.0.8
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  * @preserve
@@ -37,7 +37,7 @@
       $copy.select()
       document.execCommand('copy', false, null)
     } catch (e) {
-      console.log('该浏览器不支持Copy')
+      console.log(e)
     }
   }
 
