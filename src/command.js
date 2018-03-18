@@ -25,7 +25,7 @@ export function copy (content) {
     $copy.select()
     document.execCommand('copy', false, null)
   } catch (e) {
-    console.log('该浏览器不支持Copy')
+    console.log(e)
   }
 }
 
