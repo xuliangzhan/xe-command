@@ -1,3 +1,4 @@
+'use strict'
 
 function getContainer () {
   var $copy = document.getElementById('$XECopy')
@@ -18,7 +19,7 @@ function getContainer () {
  *
  * @param {String} content 文本内容
  */
-export function copy (content) {
+function copy (content) {
   var $copy = getContainer()
   try {
     $copy.value = content
@@ -32,10 +33,34 @@ export function copy (content) {
 /**
  * 调用打印
  */
-export function print () {
+function print () {
   try {
     document.execCommand('print')
   } catch (e) {
     window.print()
   }
 }
+
+var exportMethods = {
+  copy: copy,
+  commandCopy: copy,
+  print: print,
+  commandPrint: print
+}
+
+function XECommand () {}
+
+/**
+ * functions of mixing
+ *
+ * @param {Object} methods
+ */
+function mixin (methods) {
+  return Object.assign(XECommand, methods)
+}
+
+mixin(exportMethods)
+XECommand.mixin = mixin
+
+module.exports = XECommand
+module.exports.default = XECommand
