@@ -24,9 +24,10 @@ function copy (content) {
   try {
     $copy.value = content
     $copy.select()
-    document.execCommand('copy', false, null)
+    return document.execCommand('copy', false, null)
   } catch (e) {
     console.log(e)
+    return false
   }
 }
 
