@@ -1,5 +1,5 @@
 /**
- * xe-command.js v1.0.10
+ * xe-command.js v1.0.11
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  * @preserve
@@ -13,11 +13,10 @@
 
   function XECommand () { }
 
-  function mixin (methods) {
+  XECommand.version = '1.0.11'
+  XECommand.mixin = function (methods) {
     return Object.assign(XECommand, methods)
   }
-
-  XECommand.mixin = mixin
 
   function getContainer () {
     var $copy = document.getElementById('$XECopy')
