@@ -11,22 +11,24 @@ XECommand 使用原生js实现复制文本到剪贴板的函数
 --- | --- | --- | --- | --- | --- |
 11+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
-## 安装
-### npm
-``` shell
-npm install xe-command --save
-```
-### CDN
-[查看所有包](https://cdn.jsdelivr.net/npm/xe-command/)
+## CDN 安装
+使用 script 方式安装，XECommand 会定义为全局变量  
+生产环境请使用 xe-command.min.js，更小的压缩版本，可以带来更快的速度体验。
+### cdnjs 获取最新版本
+[点击浏览](https://cdn.jsdelivr.net/npm/xe-command/)已发布的所有 npm 包源码
 ``` shell
 <script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
 ```
-[查看所有包](https://unpkg.com/xe-command/)
+### unpkg 获取最新版本
+[点击浏览](https://unpkg.com/xe-command/)已发布的所有 npm 包源码
 ``` shell
 <script src="https://unpkg.com/xe-command/dist/xe-command.js"></script>
 ```
-### AMD
+
+## AMD 安装
+### require.js
 ``` shell
+// require 配置
 require.config({
   paths: {
     // ...,
@@ -35,19 +37,28 @@ require.config({
 })
 ```
 
-## API :
-### copy (content) 复制文本到剪贴板
-```shell
-import XECommand from 'xe-command'
+## NPM 安装
+``` shell
+npm install xe-command --save
+```
+
+### NodeJS 导入
+``` shell
+var XECommand = require('xe-command')
 
 XECommand.copy('复制该内容到剪贴板')
 ```
 
-### print () 调用打印
-```shell
+### ES6 Module import
+``` shell
 import XECommand from 'xe-command'
 
-XECommand.print()
+XECommand.copy('复制该内容到剪贴板')
+```
+``` shell
+import { commandCopy } from 'xe-command'
+
+commandCopy('复制该内容到剪贴板')
 ```
 
 ## License
