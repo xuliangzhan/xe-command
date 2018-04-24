@@ -1,1 +1,1 @@
-module.exports = require('./src/command')
+module.exports = require('./src/core')
