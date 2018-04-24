@@ -11,6 +11,14 @@
 }(this, function () {
   'use strict'
 
+  function XECommand () { }
+
+  function mixin (methods) {
+    return Object.assign(XECommand, methods)
+  }
+
+  XECommand.mixin = mixin
+
   function getContainer () {
     var $copy = document.getElementById('$XECopy')
     if (!$copy) {
@@ -52,26 +60,14 @@
     }
   }
 
-  var exportMethods = {
+  var methodExports = {
     copy: copy,
     commandCopy: copy,
     print: print,
     commandPrint: print
   }
 
-  function XECommand () { }
-
-  /**
-   * functions of mixing
-   *
-   * @param {Object} methods
-   */
-  function mixin (methods) {
-    return Object.assign(XECommand, methods)
-  }
-
-  mixin(exportMethods)
-  XECommand.mixin = mixin
+  XECommand.mixin(methodExports)
 
   return XECommand
 }))
