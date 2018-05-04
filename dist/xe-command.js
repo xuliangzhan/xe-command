@@ -24,7 +24,7 @@
       $copy = document.createElement('input')
       $copy.id = '$XECopy'
       $copy.style.width = '2px'
-      $copy.style.position = 'fixed'
+      $copy.style.position = 'absolute'
       $copy.style.left = '-1000px'
       $copy.style.top = '-1000px'
       document.body.appendChild($copy)
