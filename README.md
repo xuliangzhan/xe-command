@@ -16,18 +16,18 @@ XECommand 使用原生js实现复制文本到剪贴板的函数
 生产环境请使用 xe-command.min.js，更小的压缩版本，可以带来更快的速度体验。
 ### cdnjs 获取最新版本
 [点击浏览](https://cdn.jsdelivr.net/npm/xe-command/)已发布的所有 npm 包源码
-``` shell
+```HTML
 <script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
 ```
 ### unpkg 获取最新版本
 [点击浏览](https://unpkg.com/xe-command/)已发布的所有 npm 包源码
-``` shell
+```HTML
 <script src="https://unpkg.com/xe-command/dist/xe-command.js"></script>
 ```
 
 ## AMD 安装
 ### require.js
-``` shell
+```JavaScript
 // require 配置
 require.config({
   paths: {
@@ -38,24 +38,24 @@ require.config({
 ```
 
 ## NPM 安装
-``` shell
+```JavaScript
 npm install xe-command --save
 ```
 
 ### NodeJS 导入
-``` shell
+```JavaScript
 var XECommand = require('xe-command')
 
 XECommand.copy('复制该内容到剪贴板')
 ```
 
 ### ES6 Module import
-``` shell
+```JavaScript
 import XECommand from 'xe-command'
 
 XECommand.copy('复制该内容到剪贴板')
 ```
-``` shell
+```JavaScript
 import { commandCopy } from 'xe-command'
 
 commandCopy('复制该内容到剪贴板')
