@@ -5,7 +5,7 @@ function getContainer () {
   if (!$copy) {
     $copy = document.createElement('input')
     $copy.id = '$XECopy'
-    $copy.style.width = '2px'
+    $copy.style.width = '100px'
     $copy.style.position = 'absolute'
     $copy.style.left = '-1000px'
     $copy.style.top = '-1000px'
