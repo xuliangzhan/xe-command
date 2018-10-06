@@ -19,6 +19,7 @@ XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5�
 
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
+或者
 <script src="https://unpkg.com/xe-command/dist/xe-command.js"></script>
 ```
 
