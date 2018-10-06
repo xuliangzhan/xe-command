@@ -5,10 +5,12 @@ function getContainer () {
   if (!$copy) {
     $copy = document.createElement('input')
     $copy.id = '$XECopy'
-    $copy.style.width = '100px'
-    $copy.style.position = 'absolute'
-    $copy.style.left = '-1000px'
-    $copy.style.top = '-1000px'
+    $copy.style['width'] = '48px'
+    $copy.style['height'] = '12px'
+    $copy.style['position'] = 'fixed'
+    $copy.style['z-index'] = '0'
+    $copy.style['left'] = '-100px'
+    $copy.style['top'] = '-100px'
     document.body.appendChild($copy)
   }
   return $copy
@@ -21,12 +23,13 @@ function getContainer () {
  */
 function copy (content) {
   var $copy = getContainer()
+  var value = content || ''
   try {
-    $copy.value = content
-    $copy.select()
-    return document.execCommand('copy', false, null)
+    $copy.value = value
+    $copy.focus()
+    $copy.setSelectionRange(0, value.length)
+    return document.execCommand('copy', true)
   } catch (e) {
-    console.log(e)
     return false
   }
 }
