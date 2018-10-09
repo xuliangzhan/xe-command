@@ -1,6 +1,6 @@
 {
   "name": "xe-command",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "XECommand 纯js复制文本到剪贴板,支持IE、Chrome、Firefox、Opera、Safari、IOS、Android",
   "main": "index.js",
   "scripts": {

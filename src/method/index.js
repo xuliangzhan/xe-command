@@ -7,7 +7,7 @@ function getContainer () {
     $copy.id = '$XECopy'
     $copy.style['width'] = '48px'
     $copy.style['height'] = '12px'
-    $copy.style['position'] = 'fixed'
+    $copy.style['position'] = 'absolute'
     $copy.style['z-index'] = '0'
     $copy.style['left'] = '-100px'
     $copy.style['top'] = '-100px'

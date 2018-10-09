@@ -1,5 +1,5 @@
 /**
- * xe-command.js v1.0.16
+ * xe-command.js v1.0.17
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  * @preserve
@@ -13,7 +13,7 @@
 
   function XECommand () { }
 
-  XECommand.version = '1.0.16'
+  XECommand.version = '1.0.17'
   XECommand.mixin = function (methods) {
     return Object.assign(XECommand, methods)
   }
@@ -25,7 +25,7 @@
       $copy.id = '$XECopy'
       $copy.style['width'] = '48px'
       $copy.style['height'] = '12px'
-      $copy.style['position'] = 'fixed'
+      $copy.style['position'] = 'absolute'
       $copy.style['z-index'] = '0'
       $copy.style['left'] = '-100px'
       $copy.style['top'] = '-100px'
