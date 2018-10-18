@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/xe-command.svg?style=flat-square)](https://www.npmjs.org/package/xe-command)
 [![npm downloads](https://img.shields.io/npm/dm/xe-command.svg?style=flat-square)](http://npm-stat.com/charts.html?package=xe-command)
 
-XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5的浏览器IE、Chrome、Firefox、Opera、Safari、IOS、Android
+XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5的浏览器IE、Chrome、Firefox、Opera、Safari、IOS、Android，压缩后还不到1KB的轻量级copy函数
 
 ## 兼容性
 
@@ -11,26 +11,24 @@ XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5�
 --- | --- | --- | --- | --- | --- |
 10+ ✔ | Latest ✔ | Latest ✔ | 41+ ✔ | 29+ ✔ | 10+ ✔ |
 
-## CDN 安装
-
-使用 script 方式安装，XECommand 会定义为全局变量  
-生产环境请使用 xe-command.min.js，更小的压缩版本，可以带来更快的速度体验。
-压缩后还不到1KB的轻量级copy函数
+## 安装
 
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
-或者
 <script src="https://unpkg.com/xe-command/dist/xe-command.js"></script>
 ```
 
-### ES6 Module import
+```JavaScript
+npm install xe-command --save
+```
+
+## 示例
 
 ```JavaScript
-import XECommand, { commandCopy } from 'xe-command'
+import XECommand from 'xe-command'
 
-document.querySelector('.button').addEventListener('click', function (evnt) {
+document.querySelector('.button').addEventListener('click', evnt => {
   XECommand.copy('复制该内容到剪贴板')
-  commandCopy('复制该内容到剪贴板')
 })
 ```
 
