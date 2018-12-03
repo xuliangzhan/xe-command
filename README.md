@@ -6,13 +6,13 @@
 
 XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5的浏览器IE、Chrome、Firefox、Opera、Safari、IOS、Android，压缩后还不到1KB的轻量级copy函数
 
-## 兼容性
+## Browser Support
 
 ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
 --- | --- | --- | --- | --- | --- |
 10+ ✔ | Latest ✔ | Latest ✔ | 41+ ✔ | 29+ ✔ | 10+ ✔ |
 
-## 安装
+## Install
 
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
@@ -26,13 +26,13 @@ XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5�
 npm install xe-command --save
 ```
 
-## 示例
+## Demo
 
 ```JavaScript
 import XECommand from 'xe-command'
 
 document.querySelector('.button').addEventListener('click', evnt => {
-  XECommand.copy('复制该内容到剪贴板')
+  XECommand.copy('Copy this content to the clipboard')
 })
 ```
 

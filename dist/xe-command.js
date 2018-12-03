@@ -13,11 +13,6 @@
 
   function XECommand () { }
 
-  XECommand.version = '1.0.17'
-  XECommand.mixin = function (methods) {
-    return Object.assign(XECommand, methods)
-  }
-
   function getContainer () {
     var $copy = document.getElementById('$XECopy')
     if (!$copy) {
@@ -63,14 +58,11 @@
     }
   }
 
-  var methodExports = {
-    copy: copy,
-    commandCopy: copy,
-    print: print,
-    commandPrint: print
+  XECommand.copy = copy
+  XECommand.print = print
+  XECommand.mixin = function (methods) {
+    return Object.assign(XECommand, methods)
   }
-
-  XECommand.mixin(methodExports)
 
   return XECommand
 }))

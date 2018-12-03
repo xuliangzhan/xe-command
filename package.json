@@ -1,11 +1,22 @@
 {
   "name": "xe-command",
-  "version": "1.0.19",
+  "version": "1.1.0",
   "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
   "main": "index.js",
   "typing": "index.d.ts",
   "scripts": {
-    "test": "make test"
+    "lint": "eslint dist/xe-command.js index.js",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "markdown-doctest": "^0.9.1"
   },
   "repository": {
     "type": "git",
