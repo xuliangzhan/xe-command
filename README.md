@@ -13,7 +13,23 @@ XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5�
 --- | --- | --- | --- | --- | --- |
 10+ ✔ | Latest ✔ | Latest ✔ | 41+ ✔ | 29+ ✔ | 10+ ✔ |
 
-## Install
+## Installing
+
+```JavaScript
+npm install xe-command --save
+```
+
+Using nodejs
+
+```JavaScript
+const XECommand = require('xe-command')
+```
+
+Using ES6
+
+```JavaScript
+import XECommand from 'xe-command'
+```
 
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
@@ -23,11 +39,7 @@ XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5�
 <script src="https://unpkg.com/xe-command/dist/xe-command.js"></script>
 ```
 
-```JavaScript
-npm install xe-command --save
-```
-
-## Demo
+## Example
 
 ```JavaScript
 import XECommand from 'xe-command'
