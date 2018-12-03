@@ -27,7 +27,7 @@
     "vue-command",
     "vxe-command",
     "xe-command",
-    "xe"
+    "XECommand"
   ],
   "author": {
     "name": "Xu Liangzhan",
