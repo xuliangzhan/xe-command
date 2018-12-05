@@ -47,19 +47,7 @@
     }
   }
 
-  /**
-   * 调用打印
-   */
-  function print () {
-    try {
-      document.execCommand('print')
-    } catch (e) {
-      window.print()
-    }
-  }
-
   XECommand.copy = copy
-  XECommand.print = print
   XECommand.mixin = function (methods) {
     return Object.assign(XECommand, methods)
   }
