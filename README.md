@@ -19,14 +19,6 @@ XECommand 使用原生js实现复制文本到剪贴板的函数,支持常用H5�
 npm install xe-command --save
 ```
 
-Using nodejs
-
-```JavaScript
-const XECommand = require('xe-command')
-```
-
-Using ES6
-
 ```JavaScript
 import XECommand from 'xe-command'
 ```
