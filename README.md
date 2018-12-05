@@ -37,7 +37,11 @@ import XECommand from 'xe-command'
 import XECommand from 'xe-command'
 
 document.querySelector('.button').addEventListener('click', evnt => {
-  XECommand.copy('Copy this content to the clipboard')
+  if (XECommand.copy('Copy this content to the clipboard')) {
+    alery('Copy success.')
+  } else {
+    alert('Nonsupport.')
+  }
 })
 ```
 
