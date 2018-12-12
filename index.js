@@ -18,6 +18,14 @@ function getContainer () {
   return $copy
 }
 
+function objectEach (obj, iterate, context) {
+  for (var key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      iterate.call(context || this, obj[key], key, obj)
+    }
+  }
+}
+
 /**
  * 复制文本到剪贴板
  *
@@ -38,7 +46,9 @@ function copy (content) {
 
 XECommand.copy = copy
 XECommand.mixin = function (methods) {
-  return Object.assign(XECommand, methods)
+  objectEach(methods, function (callback, name) {
+    XECommand[name] = callback
+  })
 }
 
 module.exports = XECommand

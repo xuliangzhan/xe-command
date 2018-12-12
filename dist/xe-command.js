@@ -1,5 +1,5 @@
 /**
- * xe-command.js v1.1.0
+ * xe-command.js v1.1.1
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  * @preserve
@@ -29,6 +29,14 @@
     return $copy
   }
 
+  function objectEach (obj, iterate, context) {
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        iterate.call(context || this, obj[key], key, obj)
+      }
+    }
+  }
+
   /**
    * 复制文本到剪贴板
    *
@@ -49,7 +57,9 @@
 
   XECommand.copy = copy
   XECommand.mixin = function (methods) {
-    return Object.assign(XECommand, methods)
+    objectEach(methods, function (callback, name) {
+      XECommand[name] = callback
+    })
   }
 
   return XECommand
