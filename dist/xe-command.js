@@ -22,8 +22,8 @@
       $copy.style['height'] = '12px'
       $copy.style['position'] = 'absolute'
       $copy.style['z-index'] = '0'
-      $copy.style['left'] = '-100px'
-      $copy.style['top'] = '-100px'
+      $copy.style['left'] = '-500px'
+      $copy.style['top'] = '-500px'
       document.body.appendChild($copy)
     }
     return $copy

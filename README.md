@@ -40,7 +40,7 @@ document.querySelector('.button').addEventListener('click', evnt => {
   if (XECommand.copy('Copy this content to the clipboard')) {
     alery('Copy success.')
   } else {
-    alert('Nonsupport.')
+    alert('The browser is not supported.')
   }
 })
 ```
