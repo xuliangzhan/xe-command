@@ -1,6 +1,6 @@
 {
   "name": "xe-command",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
   "main": "index.js",
   "typing": "index.d.ts",
@@ -8,6 +8,10 @@
     "lint": "eslint dist/xe-command.js index.js",
     "test": "npm run lint"
   },
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
