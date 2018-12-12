@@ -1,6 +1,6 @@
 {
   "name": "xe-command",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
   "main": "index.js",
   "typing": "index.d.ts",
