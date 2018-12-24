@@ -1,9 +1,9 @@
 {
   "name": "xe-command",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
   "main": "index.js",
-  "typing": "types/index.d.ts",
+  "typings": "types/index.d.ts",
   "scripts": {
     "lint": "eslint dist/xe-command.js index.js",
     "test": "npm run lint"
