@@ -1,16 +1,17 @@
 {
   "name": "xe-command",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
   "main": "index.js",
-  "typing": "index.d.ts",
+  "typing": "types/index.d.ts",
   "scripts": {
     "lint": "eslint dist/xe-command.js index.js",
     "test": "npm run lint"
   },
   "files": [
     "src",
-    "dist/*.js"
+    "types",
+    "dist"
   ],
   "devDependencies": {
     "eslint": "^5.9.0",
@@ -37,7 +38,7 @@
     "name": "Xu Liangzhan",
     "email": "xu_liangzhan@163.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xuliangzhan/xe-command/issues"
   },
