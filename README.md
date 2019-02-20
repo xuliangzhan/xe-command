@@ -7,11 +7,11 @@
 
 ## Installing
 
-```JavaScript
+```javascript
 npm install xe-command --save
 ```
 
-```JavaScript
+```javascript
 import XECommand from 'xe-command'
 ```
 
@@ -25,7 +25,7 @@ import XECommand from 'xe-command'
 
 ## Example
 
-```JavaScript
+```javascript
 document.querySelector('.button').addEventListener('click', evnt => {
   if (XECommand.copy('Copy this content to the clipboard')) {
     alery('Copy success.')
