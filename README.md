@@ -8,16 +8,12 @@
 
 ## Installing
 
-```javascript
+```shell
 npm install xe-command --save
 ```
 
 ```javascript
 import XECommand from 'xe-command'
-```
-
-```HTML
-<script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.min.js"></script>
 ```
 
 ```HTML
