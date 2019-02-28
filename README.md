@@ -17,11 +17,11 @@ import XECommand from 'xe-command'
 ```
 
 ```HTML
-<script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xe-command/dist/xe-command.min.js"></script>
 ```
 
 ```HTML
-<script src="https://unpkg.com/xe-command/dist/xe-command.js"></script>
+<script src="https://unpkg.com/xe-command/dist/xe-command.min.js"></script>
 ```
 
 ## Example
