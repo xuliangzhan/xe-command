@@ -20,10 +20,12 @@ Get on [unpkg](https://unpkg.com/xe-command/) and [cdnjs](https://cdn.jsdelivr.n
 
 ## Example
 
+[Run this demo on jsfiddle.net](https://jsfiddle.net/fjvckd2a/)
+
 ```javascript
 document.querySelector('.button').addEventListener('click', evnt => {
   if (XECommand.copy('Copy this content to the clipboard')) {
-    alery('Copy success.')
+    alert('Copy success.')
   } else {
     alert('The browser is not supported.')
   }
