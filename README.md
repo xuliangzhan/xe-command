@@ -12,9 +12,7 @@
 npm install xe-command --save
 ```
 
-```javascript
-import XECommand from 'xe-command'
-```
+在 [unpkg](https://unpkg.com/xe-command/) 和 [cdnjs](https://cdn.jsdelivr.net/npm/xe-command/) 上获取
 
 ```HTML
 <script src="https://unpkg.com/xe-command/dist/xe-command.min.js"></script>
