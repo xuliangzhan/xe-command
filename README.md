@@ -4,7 +4,7 @@
 [![npm build](https://travis-ci.org/xuliangzhan/xe-command.svg?branch=master)](https://travis-ci.org/xuliangzhan/xe-command)
 [![npm downloads](https://img.shields.io/npm/dm/xe-command.svg?style=flat-square)](http://npm-stat.com/charts.html?package=xe-command)
 [![gzip size: JS](http://img.badgesize.io/https://unpkg.com/xe-command/dist/xe-command.min.js?compression=gzip&label=gzip%20size:%20JS)](http://img.badgesize.io/https://unpkg.com/xe-command/lib/index.umd.min.js?compression=gzip&label=gzip%20size:%20JS)
-[![npm license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/xuliangzhan/xe-command/blob/master/LICENSE)
+[![npm license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/xuliangzhan/xe-command/blob/master/LICENSE)
 
 ## Installing
 
